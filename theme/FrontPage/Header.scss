@@ -102,5 +102,19 @@
         flex-direction: row;
         align-items: center;
         border-radius: 0;
+
+        &::after {
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+            box-sizing: content-box;
+            display: block;
+            padding: 8px;
+            bottom: 100%;
+            right: 0;
+            transform: translate(-2px, -2px);
+            transform-origin: bottom right;
+            white-space: pre;
+            content: "Our CSS theme is custom-made.\00000aIf you experience any issues, please report them to our modmail!";
+        }
     }
 }

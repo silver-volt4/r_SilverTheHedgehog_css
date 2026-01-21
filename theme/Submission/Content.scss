@@ -8,7 +8,8 @@ div.thing:not(.comment)[data-is-gallery="true"] div.entry .media-preview {
 
 div.thing:not(.comment) div.entry {
     div.crosspost-preview,
-    form.usertext div.usertext-body .md {
+    form.usertext div.usertext-body .md,
+    .usertext.usertext-body {
         @include liftedBoxDark;
         background-color: $dark;
         color: $textColor;
@@ -34,6 +35,19 @@ div.thing:not(.comment) div.entry {
 
         .crosspost-preview-content hr.self-divider {
             border-top: dotted 1px $textColor;
+        }
+    }
+
+    .md {
+        background-color: transparent;
+        border: none;
+    }
+
+    .crosspost-preview.video .crosspost-preview-content {
+        background-color: transparent;
+
+        .md {
+            font-size: 16px;
         }
     }
 
